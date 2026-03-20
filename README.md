@@ -7,7 +7,9 @@
 ## 🚀 핵심 프로젝트
 ### 1. AXI4-Lite
 - AXI4-Lite 기본 모듈 구현 후 Testbench 및 SVA 기반 기능 검증을 진행했습니다.
-- 주요 성과: 4가지 프로토콜 규칙 assertion과 6가지 coverage 항목 검증 완료
+- 주요 성과:
+    - 4가지 프로토콜 규칙 assertion
+    - 6가지 coverage 항목 검증 완료
 - [프로젝트 링크](https://github.com/bjunverse26/AXI4_Lite)
 
 ### 2. PIM-Quant-Sim (PIM_Framework)
