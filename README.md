@@ -15,7 +15,7 @@
 ### 2. PIM-Quant-Sim (PIM_Framework)
 - **LLM 양자화(SmoothQuant) 및 PIM 하드웨어 물리적 오차 시뮬레이터 구현**
 - 주요 성과: 
-    - Llama 모델 대상 SmoothQuant 및 Bit-slicing 연산 모델링을 진행했습니다.
+    - 학부인턴 활동으로, Llama 모델 대상 SmoothQuant 및 Bit-slicing 연산 모델링을 진행했습니다.
     - 하드웨어 소자의 Noise, Retention, ADC 오차 등 아날로그 특성 시뮬레이션
     - 하드웨어 제약 조건에 따른 모델의 Perplexity(PPL) 성능 분석
 - [프로젝트 링크](https://github.com/bjunverse26/PIM_Framework)
