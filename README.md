@@ -13,7 +13,6 @@
 - [프로젝트 링크](https://github.com/bjunverse26/AXI4_Lite)
 
 ### 2. PIM-Quant-Sim (PIM_Framework)
-- **LLM 양자화(SmoothQuant) 및 PIM 하드웨어 물리적 오차 시뮬레이터 구현**
 - Llama 모델 대상 SmoothQuant 및 Bit-slicing 연산 모델링을 진행했습니다.
 - 주요 성과:
     - 하드웨어 소자의 Noise, Retention, ADC 오차 등 아날로그 특성 시뮬레이션
