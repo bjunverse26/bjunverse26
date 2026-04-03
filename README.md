@@ -14,8 +14,8 @@
 
 ### 2. PIM-Quant-Sim (PIM_Framework)
 - **LLM 양자화(SmoothQuant) 및 PIM 하드웨어 물리적 오차 시뮬레이터 구현**
-- 주요 성과: 
-    - 학부인턴 활동으로, Llama 모델 대상 SmoothQuant 및 Bit-slicing 연산 모델링을 진행했습니다.
+- Llama 모델 대상 SmoothQuant 및 Bit-slicing 연산 모델링을 진행했습니다.
+- 주요 성과:
     - 하드웨어 소자의 Noise, Retention, ADC 오차 등 아날로그 특성 시뮬레이션
     - 하드웨어 제약 조건에 따른 모델의 Perplexity(PPL) 성능 분석
 - [프로젝트 링크](https://github.com/bjunverse26/PIM_Framework)
@@ -32,10 +32,7 @@
 ### Tools
 ![Vivado](https://img.shields.io/badge/Vivado-BB2200?style=for-the-badge)
 ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
-
-## 📊 GitHub 통계
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=bjunverse26&show_icons=true)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=bjunverse26&layout=compact)
+![Virtuoso](https://img.shields.io/badge/Virtuoso-CC0000?style=for-the-badge&logo=cadence&logoColor=white)
 
 ## 📫 연락처 / Links
 - GitHub: https://github.com/bjunverse26
