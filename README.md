@@ -5,14 +5,14 @@
 
 ## 🚀 핵심 프로젝트
 ### 1. AXI4-Lite
-- AXI4-Lite 기본 모듈 구현 후 Testbench 및 SVA 기반 기능 검증을 진행했습니다.
+- AXI4-Lite 기본 모듈 구현 후 Testbench 및 SVA 기반 기능 검증 진행
 - 주요 성과:
     - 4가지 프로토콜 규칙 assertion
     - 6가지 coverage 항목 검증 완료
 - [프로젝트 링크](https://github.com/bjunverse26/AXI4_Lite)
 
 ### 2. PIM-Quant-Sim (PIM_Framework)
-- Llama 모델 대상 SmoothQuant 및 Bit-slicing 연산 모델링을 진행했습니다.
+- Llama 모델 대상 SmoothQuant 및 Bit-slicing 연산 모델링 진행
 - 주요 성과:
     - 하드웨어 소자의 Noise, Retention, ADC 오차 등 아날로그 특성 시뮬레이션
     - 하드웨어 제약 조건에 따른 모델의 Perplexity(PPL) 성능 분석
