@@ -1,145 +1,97 @@
-﻿# 👋 Hi, I'm bjunverse
+﻿# 👋 Hello, I'm bjunverse26!
 
 <div align="center">
 
-### Digital Logic · RTL Design · Verification · Mixed-Signal Hardware
+**Digital Logic · RTL Design · Verification · Mixed-Signal Circuit**
 
-Digital 회로 설계부터 Mixed-signal 회로까지 확장 가능한 하드웨어 설계 역량을 쌓고 있습니다.
-RTL 설계, 검증, FPGA 기반 가속기 구조, 그리고 PIM 기반 하드웨어-알고리즘 분석에 관심이 있습니다.
+디지털 회로 설계와 검증을 중심으로 공부하며, <br> FPGA 기반 시스템 설계와 Mixed-Signal 회로 설계로 하드웨어 설계 역량을 쌓아가고 있습니다.
 
-<br/>
-
-[![GitHub](https://img.shields.io/badge/GitHub-bjunverse26-181717?style=for-the-badge\&logo=github\&logoColor=white)](https://github.com/bjunverse26)
-[![Velog](https://img.shields.io/badge/Velog-bjunverse_-20C997?style=for-the-badge\&logo=velog\&logoColor=white)](https://velog.io/@bjunverse_/posts)
-[![Email](https://img.shields.io/badge/Email-bjunverse26%40gmail.com-D14836?style=for-the-badge\&logo=gmail\&logoColor=white)](mailto:bjunverse26@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bjunverse26)
+[![Velog](https://img.shields.io/badge/Velog-20C997?style=for-the-badge&logo=velog&logoColor=white)](https://velog.io/@bjunverse_/posts)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:bjunverse26@gmail.com)
 
 </div>
 
 ---
 
-## 🚀 Featured Projects
+## 🛠 Tech Stack
 
-### 1. AXI4-Lite / AXI4-UART
+### 🚀 HDL / Verification / FPGA
+<p>
+  <img src="https://img.shields.io/badge/Verilog-F11910?style=flat-square&logo=verilog&logoColor=white">
+  <img src="https://img.shields.io/badge/SystemVerilog-4B0082?style=flat-square&logo=systemverilog&logoColor=white">
+  <img src="https://img.shields.io/badge/Vivado-FF6600?style=flat-square&logo=xilinx&logoColor=white">
+  <img src="https://img.shields.io/badge/AXI4--Lite-005A9C?style=flat-square&logo=arm&logoColor=white">
+</p>
 
-> AXI4-Lite 기본 slave 구조를 구현하고, 이를 기반으로 UART Core를 제어하는 AXI4-UART peripheral까지 확장한 프로젝트입니다.
+### 🔬 Circuit / EDA / Tools
+<p>
+  <img src="https://img.shields.io/badge/Cadence_Virtuoso-FF0000?style=flat-square&logo=cadence&logoColor=white">
+  <img src="https://img.shields.io/badge/HSPICE-4285F4?style=flat-square&logo=synopsys&logoColor=white">
+  <img src="https://img.shields.io/badge/KiCad-314EAB?style=flat-square&logo=kicad&logoColor=white">
+  <img src="https://img.shields.io/badge/MATLAB-ED8B00?style=flat-square&logo=mathworks&logoColor=white">
+</p>
 
-**Key Highlights**
-
-* AXI4-Lite `AW -> W`, `W -> AW`, same-cycle write transaction 처리
-* Testbench와 SVA를 분리한 구조로 protocol assertion 및 coverage 검증
-* AXI4-UART에서 `CTRL`, `STATUS`, `TXDATA`, `RXDATA` 기반 register map 구현
-* UART loopback, invalid access, zero strobe, backpressure scenario 검증
-
-**Links**
-
-[![AXI4-Lite](https://img.shields.io/badge/Repo-AXI4__Lite-181717?style=flat-square\&logo=github)](https://github.com/bjunverse26/AXI4_Lite)
-[![AXI4-UART](https://img.shields.io/badge/Repo-AXI4__UART-181717?style=flat-square\&logo=github)](https://github.com/bjunverse26/AXI4_UART)
-
----
-
-### 2. PIM-Quant-Sim / PIM Framework
-
-> Llama 모델을 대상으로 SmoothQuant 및 Bit-slicing 연산을 모델링하고, PIM 하드웨어 비이상성이 모델 성능에 미치는 영향을 분석한 프로젝트입니다.
-
-**Key Highlights**
-
-* SmoothQuant 기반 quantization flow 모델링
-* Bit-slicing 연산 구조 시뮬레이션
-* Noise, Retention, ADC error 등 아날로그 하드웨어 비이상성 반영
-* 하드웨어 제약 조건에 따른 Perplexity(PPL) 성능 분석
-
-**Link**
-
-[![PIM Framework](https://img.shields.io/badge/Repo-PIM__Framework-181717?style=flat-square\&logo=github)](https://github.com/bjunverse26/PIM_Framework)
+### 💻 Software / AI
+<p>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white">
+  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white">
+  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white">
+</p>
 
 ---
 
-### 3. Mechatronics
+## 📂 Featured Projects
 
-> 센서, 구동기, 제어 로직을 단계적으로 실습하며 하드웨어 동작을 고려한 제어 구조를 학습하는 프로젝트입니다.
+### 📟 AXI4-Lite / AXI4-UART 
+> **AXI 기반 Peripheral 설계 및 검증**
+- AXI4-Lite Slave 구조 구현 및 UART Core 제어 확장
+- `AW/W` 트랜잭션 동시 처리 로직 최적화
+- SVA(SystemVerilog Assertion)를 통한 프로토콜 검증 및 Coverage 분석
+- [🔗 Repository](https://github.com/bjunverse26/AXI4_Lite)
 
-**Current Progress**
+### 🧠 PIM-Quant-Sim
+> **하드웨어 기반 AI 양자화 시뮬레이션**
+- Llama 모델 대상 SmoothQuant 및 Bit-slicing 모델링
+- ADC Error, Retention 등 하드웨어 비이상성 특성 시뮬레이션 반영
+- 하드웨어 제약 조건에 따른 Perplexity(PPL) 영향력 분석
+- [🔗 Repository](https://github.com/bjunverse26/PIM_Framework)
 
-* DC motor 구동 및 기본 제어 실습
-* Microcontroller 기반 입출력 제어 흐름 학습
-* 실제 하드웨어 동작을 고려한 제어 구조 이해
+### 🤖 Mechatronics & Control
+> **센서 및 모터 제어 시스템 실습**
+- DC Motor 구동 및 Feedback 제어 로직 설계
+- Stepping/BLDC 모터 제어 확장 및 최종 자율 주행 프로젝트 예정
+- [🔗 Repository](https://github.com/bjunverse26/Mechatronics)
 
-**Next Steps**
-
-* Stepping motor 및 BLDC motor 제어 실습
-* Sensor feedback 기반 제어 시스템 구현
-* 최종 자율 프로젝트를 통한 Mechatronics 통합 설계
-
-**Link**
-
-[![Mechatronics](https://img.shields.io/badge/Repo-Mechatronics-181717?style=flat-square\&logo=github)](https://github.com/bjunverse26/Mechatronics)
-
----
-
-### 4. Digital System Design
-
-> FPGA 기반 RTL 설계와 하드웨어 가속기 구조를 단계적으로 학습하며, 최종적으로 Super Resolution 가속기 설계를 목표로 진행한 프로젝트입니다.
-
-**Key Highlights**
-
-* Vivado 기반 프로젝트 생성, RTL 작성, Testbench simulation 흐름 정리
-* MAC, adder tree, pipelined adder tree 등 기본 연산 블록 설계
-* BRAM, LUTRAM, URAM, DSP macro 등 FPGA 자원 활용 실습
-* Processing Element(PE), 1D/2D convolution, multi-channel 데이터 처리 구조 구현
-* Super Resolution accelerator 설계를 위한 사전 구조 학습
-
-**Link**
-
-[![Digital System Design](https://img.shields.io/badge/Repo-Digital__System__Design-181717?style=flat-square\&logo=github)](https://github.com/bjunverse26/Digital_System_Design)
+### ⚡ Digital System Design
+> **FPGA 기반 가속기 아키텍처 설계**
+- MAC, Adder Tree 등 핵심 연산 블록 설계 및 BRAM/DSP 자원 최적화
+- Multi-channel 데이터 처리를 위한 PE(Processing Element) 구조 설계
+- 2D Convolution 기반 Super Resolution 가속기 구현 중
+- [🔗 Repository](https://github.com/bjunverse26/Digital_System_Design)
 
 ---
 
-## 📊 GitHub Stats
+## 🎯 Interests
 
-<div align="center">
+- 🏗️ **RTL Design & Verification** (UVM, SVA)
+- 🏎️ **FPGA Acceleration** (Hardware-aware Architecture)
+- 💾 **Processing-in-Memory (PIM)** Circuit Design
+- 🔌 **Mixed-Signal** IC Design & Simulation
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=bjunverse26&show_icons=true&theme=tokyonight)
+---
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=bjunverse26&layout=compact&theme=tokyonight)
+## 📫 Contact Me
 
+<div align="left">
+  <a href="https://github.com/bjunverse26"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white"/></a>
+  <a href="https://velog.io/@bjunverse_/posts"><img src="https://img.shields.io/badge/Velog-20C997?style=flat-square&logo=velog&logoColor=white"/></a>
+  <a href="mailto:bjunverse26@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white"/></a>
 </div>
 
----
+<br>
 
-## 🧰 Tech Stack
-
-### HDL / Verification
-
-![Verilog](https://img.shields.io/badge/Verilog-808080?style=for-the-badge)
-![SystemVerilog](https://img.shields.io/badge/SystemVerilog-1E90FF?style=for-the-badge)
-
-### Software / AI Framework
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge\&logo=python\&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge\&logo=pytorch\&logoColor=white)
-
-### Circuit / EDA Tools
-
-![Cadence Virtuoso](https://img.shields.io/badge/Cadence_Virtuoso-CC0000?style=for-the-badge)
-![LTspice](https://img.shields.io/badge/LTspice-900028?style=for-the-badge)
-![HSPICE](https://img.shields.io/badge/HSPICE-4B4B4B?style=for-the-badge)
-![Spectre](https://img.shields.io/badge/Spectre-8B0000?style=for-the-badge)
-![KiCad](https://img.shields.io/badge/KiCad-314CB0?style=for-the-badge\&logo=kicad\&logoColor=white)
-
-### FPGA / Development Tools
-
-![Vivado](https://img.shields.io/badge/Vivado-BB2200?style=for-the-badge)
-![MATLAB](https://img.shields.io/badge/MATLAB-0076A8?style=for-the-badge)
-![Simulink](https://img.shields.io/badge/Simulink-F2A900?style=for-the-badge)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge\&logo=visualstudiocode\&logoColor=white)
-
----
-
-## 📌 Interests
-
-* RTL Design & Verification
-* AXI-based Peripheral Design
-* FPGA-based Accelerator Architecture
-* Processing-In-Memory Simulation
-* Mixed-Signal Circuit Design
-* Hardware-aware AI Model Optimization
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=bjunverse26&show_icons=true&theme=radical" alt="bjunverse26's GitHub stats" />
+</div>
