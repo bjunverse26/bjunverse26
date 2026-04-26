@@ -5,6 +5,15 @@
 ### Digital Logic · RTL Design · Verification · Mixed-Signal Hardware
 
 Digital 회로 설계부터 Mixed-signal 회로까지 확장 가능한 하드웨어 설계 역량을 쌓고 있습니다.
+RTL 설계, 검증, FPGA 기반 가속기 구조, 그리고 PIM 기반 하드웨어-알고리즘 분석에 관심이 있습니다.
+
+<br/>
+
+[![GitHub](https://img.shields.io/badge/GitHub-bjunverse26-181717?style=for-the-badge\&logo=github\&logoColor=white)](https://github.com/bjunverse26)
+[![Velog](https://img.shields.io/badge/Velog-bjunverse_-20C997?style=for-the-badge\&logo=velog\&logoColor=white)](https://velog.io/@bjunverse_/posts)
+[![Email](https://img.shields.io/badge/Email-bjunverse26%40gmail.com-D14836?style=for-the-badge\&logo=gmail\&logoColor=white)](mailto:bjunverse26@gmail.com)
+
+</div>
 
 ---
 
@@ -85,6 +94,18 @@ Digital 회로 설계부터 Mixed-signal 회로까지 확장 가능한 하드웨
 
 ---
 
+## 📊 GitHub Stats
+
+<div align="center">
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=bjunverse26&show_icons=true&theme=tokyonight)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=bjunverse26&layout=compact&theme=tokyonight)
+
+</div>
+
+---
+
 ## 🧰 Tech Stack
 
 ### HDL / Verification
@@ -122,15 +143,3 @@ Digital 회로 설계부터 Mixed-signal 회로까지 확장 가능한 하드웨
 * Processing-In-Memory Simulation
 * Mixed-Signal Circuit Design
 * Hardware-aware AI Model Optimization
-
----
-
-## 🔗 Contact
-
-<div align="center">
-
-[![GitHub](https://img.shields.io/badge/GitHub-bjunverse26-181717?style=for-the-badge\&logo=github\&logoColor=white)](https://github.com/bjunverse26)
-[![Velog](https://img.shields.io/badge/Velog-bjunverse_-20C997?style=for-the-badge\&logo=velog\&logoColor=white)](https://velog.io/@bjunverse_/posts)
-[![Email](https://img.shields.io/badge/Email-bjunverse26%40gmail.com-D14836?style=for-the-badge\&logo=gmail\&logoColor=white)](mailto:bjunverse26@gmail.com)
-
-</div>
