@@ -4,7 +4,7 @@
 
 **Digital Logic · RTL Design · Verification · Mixed-Signal Circuit**
 
-디지털 회로 설계와 검증을 중심으로 FPGA 기반 시스템, 하드웨어 가속기, Mixed-Signal 회로 설계를 학습하고 구현하고 있습니다.
+디지털 회로 설계와 검증을 중심으로 마이크로컨트롤러 시스템, 하드웨어 가속기, Mixed-Signal 회로 설계를 학습하고 구현하고 있습니다.
 
 </div>
 
