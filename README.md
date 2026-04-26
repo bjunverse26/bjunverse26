@@ -30,14 +30,14 @@
 - Llama 모델 대상 SmoothQuant 및 Bit-slicing 모델링
 - ADC Error, Retention 등 하드웨어 비이상성 특성 시뮬레이션 반영
 - 하드웨어 제약 조건에 따른 Perplexity(PPL) 영향력 분석
-- [🔗 Repository](https://github.com/bjunverse26/PIM_Framework)
+- [🔗 PIM-Quant-Sim](https://github.com/bjunverse26/PIM_Framework)
 
 ### 3. Mechatronics & Control
 > **센서 및 모터 제어 시스템 실습**
 
 - DC Motor 구동 및 Feedback 제어 로직 설계
 - Stepping/BLDC 모터 제어 확장 및 최종 자율 프로젝트 예정
-- [🔗 Repository](https://github.com/bjunverse26/Mechatronics)
+- [🔗 Mechatronics](https://github.com/bjunverse26/Mechatronics)
 
 ### 4. Digital System Design
 > **FPGA 기반 가속기 아키텍처 설계**
@@ -45,7 +45,7 @@
 - MAC, Adder Tree 등 핵심 연산 블록 설계 및 BRAM/DSP 자원 최적화
 - Multi-channel 데이터 처리를 위한 PE(Processing Element) 구조 설계
 - 2D Convolution 기반 Super Resolution 가속기 구현 중
-- [🔗 Repository](https://github.com/bjunverse26/Digital_System_Design)
+- [🔗 Digital-System-Design](https://github.com/bjunverse26/Digital_System_Design)
 
 ---
 
