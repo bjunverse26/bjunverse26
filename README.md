@@ -4,7 +4,7 @@
 
 **Digital Logic · RTL Design · Verification · Mixed-Signal Circuit**
 
-디지털 회로 설계와 검증을 중심으로 공부하며, <br> FPGA 기반 시스템 설계와 Mixed-Signal 회로 설계로 하드웨어 설계 역량을 쌓아가고 있습니다.
+디지털 회로 설계와 검증을 중심으로 FPGA 기반 시스템, 하드웨어 가속기, Mixed-Signal 회로 설계를 학습하고 구현하고 있습니다.
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bjunverse26)
 [![Velog](https://img.shields.io/badge/Velog-20C997?style=for-the-badge&logo=velog&logoColor=white)](https://velog.io/@bjunverse_/posts)
@@ -21,7 +21,6 @@
   <img src="https://img.shields.io/badge/Verilog-F11910?style=flat-square&logo=verilog&logoColor=white">
   <img src="https://img.shields.io/badge/SystemVerilog-4B0082?style=flat-square&logo=systemverilog&logoColor=white">
   <img src="https://img.shields.io/badge/Vivado-FF6600?style=flat-square&logo=xilinx&logoColor=white">
-  <img src="https://img.shields.io/badge/AXI4--Lite-005A9C?style=flat-square&logo=arm&logoColor=white">
 </p>
 
 ### 🔬 Circuit / EDA / Tools
@@ -44,15 +43,17 @@
 
 ## 📂 Featured Projects
 
-### 📟 AXI4-Lite / AXI4-UART 
+### 📟 AXI4-Lite / AXI4-UART
 > **AXI 기반 Peripheral 설계 및 검증**
+
 - AXI4-Lite Slave 구조 구현 및 UART Core 제어 확장
 - `AW/W` 트랜잭션 동시 처리 로직 최적화
-- SVA(SystemVerilog Assertion)를 통한 프로토콜 검증 및 Coverage 분석
-- [🔗 Repository](https://github.com/bjunverse26/AXI4_Lite)
+- SVA(SystemVerilog Assertion)를 통한 프로토콜 검증 구조 구성
+- [🔗 AXI4-Lite](https://github.com/bjunverse26/AXI4_Lite) / [🔗 AXI4-UART](https://github.com/bjunverse26/AXI4_UART)
 
 ### 🧠 PIM-Quant-Sim
 > **하드웨어 기반 AI 양자화 시뮬레이션**
+
 - Llama 모델 대상 SmoothQuant 및 Bit-slicing 모델링
 - ADC Error, Retention 등 하드웨어 비이상성 특성 시뮬레이션 반영
 - 하드웨어 제약 조건에 따른 Perplexity(PPL) 영향력 분석
@@ -60,12 +61,14 @@
 
 ### 🤖 Mechatronics & Control
 > **센서 및 모터 제어 시스템 실습**
+
 - DC Motor 구동 및 Feedback 제어 로직 설계
 - Stepping/BLDC 모터 제어 확장 및 최종 자율 주행 프로젝트 예정
 - [🔗 Repository](https://github.com/bjunverse26/Mechatronics)
 
 ### ⚡ Digital System Design
 > **FPGA 기반 가속기 아키텍처 설계**
+
 - MAC, Adder Tree 등 핵심 연산 블록 설계 및 BRAM/DSP 자원 최적화
 - Multi-channel 데이터 처리를 위한 PE(Processing Element) 구조 설계
 - 2D Convolution 기반 Super Resolution 가속기 구현 중
@@ -75,7 +78,7 @@
 
 ## 🎯 Interests
 
-- 🏗️ **RTL Design & Verification** (UVM, SVA)
+- 🏗️ **RTL Design & Verification** (SystemVerilog, SVA)
 - 🏎️ **FPGA Acceleration** (Hardware-aware Architecture)
 - 💾 **Processing-in-Memory (PIM)** Circuit Design
 - 🔌 **Mixed-Signal** IC Design & Simulation
@@ -88,10 +91,4 @@
   <a href="https://github.com/bjunverse26"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white"/></a>
   <a href="https://velog.io/@bjunverse_/posts"><img src="https://img.shields.io/badge/Velog-20C997?style=flat-square&logo=velog&logoColor=white"/></a>
   <a href="mailto:bjunverse26@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white"/></a>
-</div>
-
-<br>
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=bjunverse26&show_icons=true&theme=radical" alt="bjunverse26's GitHub stats" />
 </div>
