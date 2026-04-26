@@ -6,10 +6,6 @@
 
 디지털 회로 설계와 검증을 중심으로 FPGA 기반 시스템, 하드웨어 가속기, Mixed-Signal 회로 설계를 학습하고 구현하고 있습니다.
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bjunverse26)
-[![Velog](https://img.shields.io/badge/Velog-20C997?style=for-the-badge&logo=velog&logoColor=white)](https://velog.io/@bjunverse_/posts)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:bjunverse26@gmail.com)
-
 </div>
 
 ---
