@@ -1,7 +1,7 @@
 ﻿# Profile README
 
 ## 👋 About Me
-- 디지털 회로부터 mixed-signal/analog 회로까지 확장 가능한 하드웨어 설계 역량을 쌓고 있습니다.
+- Digital 회로부터 Mixed-signal 회로까지 확장 가능한 하드웨어 설계 역량을 쌓고 있습니다.
 
 ## 🚀 핵심 프로젝트
 ### 1. AXI4-Lite / AXI4-UART
