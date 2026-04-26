@@ -6,14 +6,6 @@
 
 Digital 회로 설계부터 Mixed-signal 회로까지 확장 가능한 하드웨어 설계 역량을 쌓고 있습니다.
 
-<br/>
-
-[![GitHub](https://img.shields.io/badge/GitHub-bjunverse26-181717?style=for-the-badge\&logo=github\&logoColor=white)](https://github.com/bjunverse26)
-[![Velog](https://img.shields.io/badge/Velog-bjunverse_-20C997?style=for-the-badge\&logo=velog\&logoColor=white)](https://velog.io/@bjunverse_/posts)
-[![Email](https://img.shields.io/badge/Email-bjunverse26%40gmail.com-D14836?style=for-the-badge\&logo=gmail\&logoColor=white)](mailto:bjunverse26@gmail.com)
-
-</div>
-
 ---
 
 ## 🚀 Featured Projects
