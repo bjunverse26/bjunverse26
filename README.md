@@ -1,10 +1,12 @@
-﻿# 👋 Hello, I'm bjunverse26!
+# 👋 Hello, I'm bjunverse26!
 
 <div align="center">
 
-**Digital Logic · RTL Design · Verification · Mixed-Signal Circuit**
+**RTL Design · Verification · FPGA · Embedded Firmware**
 
-디지털 회로 설계와 검증을 중심으로 마이크로컨트롤러 시스템, 하드웨어 가속기, Mixed-Signal 회로 설계를 학습하고 구현하고 있습니다.
+RTL 설계·검증과 임베디드 펌웨어를 중심으로, 하드웨어 인터페이스부터 FPGA 가속기와 실시간 제어 시스템까지 구현하고 있습니다.
+
+설계 의도를 테스트벤치와 SVA로 검증하고, 하드웨어와 소프트웨어가 맞물리는 디지털 시스템을 완성하는 엔지니어를 목표로 합니다.
 
 </div>
 
@@ -12,45 +14,51 @@
 
 ## 📂 Featured Projects
 
-### 1. AXI4-Lite / AXI4-UART
-> **AXI 기반 Peripheral 설계 및 검증**
+### 1. Digital System Design
+> **FPGA 기반 SRCNN 가속기 설계**
 
-- AXI4-Lite Slave 구조 구현 및 UART Core 제어 확장
-- `AW/W` 트랜잭션 동시 처리 로직 최적화
-- SVA(SystemVerilog Assertion)를 통한 프로토콜 검증 구조 구성
+- Q8.8 3-layer SRCNN의 Recursive 및 Streamline 아키텍처 3종 구현
+- Line Buffer, PE Array, Controller FSM, Packed Activation Memory 설계
+- C++ Reference와 RTL 결과의 bit-level 비교 및 100 MHz timing 검증
+- [🔗 Digital-System-Design](https://github.com/bjunverse26/Digital_System_Design)
+
+### 2. AXI4-Lite / AXI4-UART
+> **Memory-Mapped Peripheral RTL 설계 및 검증**
+
+- 32-bit AXI4-Lite Slave와 UART Peripheral 구현
+- AW/W 도착 순서와 Read/Write Backpressure 처리
+- Directed Testbench와 SVA를 통한 Protocol 검증
 - [🔗 AXI4-Lite](https://github.com/bjunverse26/AXI4_Lite) / [🔗 AXI4-UART](https://github.com/bjunverse26/AXI4_UART)
 
-### 2. PIM-Quant-Sim
-> **하드웨어 기반 AI 양자화 시뮬레이션**
+### 3. Async FIFO & CDC
+> **Clock Domain Crossing 설계 및 Self-Checking 검증**
 
-- Llama 모델 대상 SmoothQuant 및 Bit-slicing 모델링
-- ADC Error, Retention 등 하드웨어 비이상성 특성 시뮬레이션 반영
-- 하드웨어 제약 조건에 따른 Perplexity(PPL) 영향력 분석
-- [🔗 PIM-Quant-Sim](https://github.com/bjunverse26/PIM_Framework)
+- Gray-code Pointer와 2-FF Synchronizer 기반 Dual-Clock FIFO 구현
+- Full/Empty 판정 및 Request/Acknowledge Handshake CDC 설계
+- Queue Scoreboard 기반 데이터 무결성 검증
+- [🔗 Async-FIFO](https://github.com/bjunverse26/Async_FIFO)
 
-### 3. Mechatronics & Control
-> **센서 및 모터 제어 시스템 실습**
+### 4. Mechatronics Motor Control
+> **DSP 기반 실시간 모터 제어 펌웨어**
 
-- DC Motor 구동 및 Feedback 제어 로직 설계
-- Stepping/BLDC 모터 제어 확장 및 최종 자율 프로젝트 예정
+- TI C6701 DSP의 Timer Interrupt 기반 실시간 제어 루프 구현
+- Encoder 입력과 PWM 출력을 이용한 DC Motor PID 및 궤적 추종 제어
+- MATLAB/Simulink 모델과 Embedded C 구현 연계
 - [🔗 Mechatronics](https://github.com/bjunverse26/Mechatronics)
 
-### 4. Digital System Design
-> **FPGA 기반 가속기 아키텍처 설계**
+### Additional Project
 
-- MAC, Adder Tree 등 핵심 연산 블록 설계 및 BRAM/DSP 자원 최적화
-- Multi-channel 데이터 처리를 위한 PE(Processing Element) 구조 설계
-- 2D Convolution 기반 Super Resolution 가속기 구현 중
-- [🔗 Digital-System-Design](https://github.com/bjunverse26/Digital_System_Design)
+- **PIM-Quant-Sim**: Llama 추론 경로의 Quantization 및 PIM Hardware Effect 모델링<br>
+  [🔗 PIM-Quant-Sim](https://github.com/bjunverse26/PIM_Framework)
 
 ---
 
 ## 🎯 Interests
 
-- **RTL Design & Verification** (SystemVerilog, SVA)
-- **FPGA Acceleration** (Hardware-aware Architecture)
-- **Processing-in-Memory (PIM)** Circuit Design
-- **Mixed-Signal** IC Design & Simulation
+- **RTL Design & Verification** (SystemVerilog, SVA, Self-Checking Testbench)
+- **FPGA / Digital System Architecture**
+- **Embedded Firmware & Real-Time Control**
+- **SoC Interface & CDC** (AXI4-Lite, UART, Async FIFO)
 
 ---
 
@@ -58,24 +66,18 @@
 
 ### 🚀 HDL / Verification / FPGA
 <p>
-  <img src="https://img.shields.io/badge/Verilog-F11910?style=flat-square&logo=verilog&logoColor=white">
-  <img src="https://img.shields.io/badge/SystemVerilog-4B0082?style=flat-square&logo=systemverilog&logoColor=white">
-  <img src="https://img.shields.io/badge/Vivado-FF6600?style=flat-square&logo=xilinx&logoColor=white">
+  <img src="https://img.shields.io/badge/Verilog-F11910?style=flat-square&logoColor=white">
+  <img src="https://img.shields.io/badge/SystemVerilog-4B0082?style=flat-square&logoColor=white">
+  <img src="https://img.shields.io/badge/SVA-6A5ACD?style=flat-square&logoColor=white">
+  <img src="https://img.shields.io/badge/Vivado-FF6600?style=flat-square&logoColor=white">
 </p>
 
-### 🔬 Circuit / EDA / Tools
+### 💻 Embedded / Software / Tools
 <p>
-  <img src="https://img.shields.io/badge/Cadence_Virtuoso-FF0000?style=flat-square&logo=cadence&logoColor=white">
-  <img src="https://img.shields.io/badge/HSPICE-4285F4?style=flat-square&logo=synopsys&logoColor=white">
-  <img src="https://img.shields.io/badge/KiCad-314EAB?style=flat-square&logo=kicad&logoColor=white">
-  <img src="https://img.shields.io/badge/MATLAB-ED8B00?style=flat-square&logo=mathworks&logoColor=white">
-</p>
-
-### 💻 Software / AI
-<p>
+  <img src="https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white">
+  <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white">
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white">
-  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white">
+  <img src="https://img.shields.io/badge/MATLAB-ED8B00?style=flat-square&logo=mathworks&logoColor=white">
   <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white">
 </p>
 
