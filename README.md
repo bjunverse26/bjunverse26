@@ -1,4 +1,4 @@
-# 👋 Hello, I'm bjunverse26!
+# 👋 Hello, I'm bjunverse26
 
 <div align="center">
 
