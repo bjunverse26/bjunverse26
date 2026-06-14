@@ -80,13 +80,3 @@ RTL 설계·검증과 임베디드 펌웨어를 중심으로, 하드웨어 인�
   <img src="https://img.shields.io/badge/MATLAB-ED8B00?style=flat-square&logo=mathworks&logoColor=white">
   <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white">
 </p>
-
----
-
-## 📫 Contact Me
-
-<div align="left">
-  <a href="https://github.com/bjunverse26"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white"/></a>
-  <a href="https://velog.io/@bjunverse_/posts"><img src="https://img.shields.io/badge/Velog-20C997?style=flat-square&logo=velog&logoColor=white"/></a>
-  <a href="mailto:bjunverse26@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white"/></a>
-</div>
