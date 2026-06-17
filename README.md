@@ -42,8 +42,9 @@ RTL 설계·검증과 임베디드 펌웨어를 중심으로, 하드웨어 인�
 > **DSP 기반 실시간 모터 제어 펌웨어**
 
 - TI C6701 DSP의 Timer Interrupt 기반 실시간 제어 루프 구현
-- Encoder 입력과 PWM 출력을 이용한 DC Motor PID 및 궤적 추종 제어
-- MATLAB/Simulink 모델과 Embedded C 구현 연계
+- Encoder, Hall Sensor, PWM 출력을 이용한 DC/STEP/BLDC Motor 제어
+- Inverted Pendulum의 Swing-up 및 Balancing 제어 구현
+- MATLAB/Simulink 모델과 Embedded C 기반 DSP 제어 실습 연계
 - [🔗 Mechatronics](https://github.com/bjunverse26/Mechatronics)
 
 ### Additional Project
@@ -58,6 +59,7 @@ RTL 설계·검증과 임베디드 펌웨어를 중심으로, 하드웨어 인�
 - **RTL Design & Verification** (SystemVerilog, SVA, Self-Checking Testbench)
 - **FPGA / Digital System Architecture**
 - **Embedded Firmware & Real-Time Control**
+- **Motor Control & Control System Implementation**
 - **SoC Interface & CDC** (AXI4-Lite, UART, Async FIFO)
 
 ---
