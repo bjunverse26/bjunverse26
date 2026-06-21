@@ -1,4 +1,4 @@
-# 김범준 | bjunverse26
+# bjunverse26
 
 **RTL Design · Verification · FPGA · Embedded Firmware · Memory/Custom IC**
 
