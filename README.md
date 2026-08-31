@@ -1,113 +1,85 @@
-# bjunverse26
+# Beomjun Kim | Hardware Design Portfolio
 
-**RTL Design · Verification · FPGA · Embedded Firmware · Memory/Custom IC**
+**RTL Design · Verification · FPGA · Memory/Custom IC · Embedded Control**
 
-디지털 시스템을 RTL로 구현하고, 검증 환경과 실제 하드웨어 동작 확인까지 연결하는 엔지니어링 역량을 쌓고 있습니다.
+회로와 시스템의 동작 원리를 이해하고, 요구 조건에 맞는 구조를 선택한 뒤 시뮬레이션·구현·측정으로 검증하는 하드웨어 엔지니어를 지향합니다.
 
-관심 분야는 **디지털 회로 설계**, **SoC 인터페이스**, **FPGA 가속기**, **메모리 회로**, **임베디드 제어 펌웨어**입니다.
+## Focus
 
-## 🎯 핵심 역량
-
-| 분야 | 역량 |
+| 분야 | 경험 |
 | --- | --- |
-| RTL Design & Verification | Verilog/SystemVerilog 기반 RTL 설계, SVA, self-checking testbench |
-| FPGA / Digital System | Vivado 기반 FPGA 구현, 연산 가속기 구조 설계, timing 검증 |
-| Memory / Custom IC | SRAM PUF architecture, custom layout, MPW 제출, chip measurement 준비 |
-| SoC Interface | AXI4-Lite, UART, CDC, memory-mapped peripheral 설계 |
-| Embedded Firmware | C 기반 register-level 제어, timer interrupt, sensor/PWM interface |
-| Control System | DSP 기반 모터 제어, 실시간 feedback loop, MATLAB/Simulink 연계 |
+| RTL Design & Verification | Verilog/SystemVerilog, SVA, self-checking testbench, regression |
+| FPGA & Digital System | 연산 가속기 데이터패스·제어·메모리 설계, Vivado implementation·timing 검증 |
+| Memory & Custom IC | SRAM cell·macro, Virtuoso simulation·layout, DRC/LVS, MPW |
+| SoC Interface & CDC | AXI4-Lite, UART, memory-mapped peripheral, asynchronous FIFO |
+| Embedded Control | Register-level C, timer ISR, sensor·PWM interface, 실시간 폐루프 제어 |
+| Modeling & Analysis | Python, C++, PyTorch, MATLAB/Simulink 기반 분석·검증 자동화 |
 
-## 📌 대표 프로젝트
+## Featured Projects
 
-### 1. Capstone Design
+### 1. 9T Dual-Mode SRAM PUF and 256-bit SRAM Macro
 
-**9T Dual-Mode SRAM PUF 설계 및 MPW 제출**
+졸업작품 팀 프로젝트에서 SRAM cell 구조와 특성 분석, cell·array layout, FPGA 기반 측정 환경을 담당했습니다.
 
-핵심 성과: **PUF 신뢰성과 SRAM normal-mode 성능을 함께 고려한 dual-mode memory architecture 설계**
+- 6T·8T cell의 RSNM과 SNM mismatch를 비교하고, PUF mode와 Normal mode를 선택하는 9T cell 설계
+- PUF mode의 SNM mismatch를 6T 대비 91.8% 높이면서 Normal mode의 RSNM 감소폭을 1.38%로 제한
+- 16×16 macro DRC/LVS 통과 및 0.5 μm CMOS 2P3M MPW 제작 완료
+- FPGA–UART–Python 기반 power cycling·순차 read·frame 검사 환경 구축
 
-- PUF mode: cascode PMOS mismatch를 활용한 reliability 향상 구조
-- Normal mode: 6T SRAM에 가까운 read latency/power 특성 확보를 목표로 한 dual-mode 동작
-- 16x16 SRAM array, precharge circuit, sense amplifier, write driver, column mux, row decoder 통합
-- ETRI My Chip MPW service를 통한 GDS 제출
-- Fabricated die 측정을 위한 KiCad PCB 및 Arty S7-25T FPGA 기반 제어 환경 준비
+### 2. [1→8→8→1 Recursive SRCNN FPGA Accelerator](https://github.com/bjunverse26/Digital_System_Design)
 
-### 2. Digital System Design
+4인 팀의 팀장으로 세 가지 SRCNN 가속기 중 1→8→8→1 Recursive 구조를 담당해 데이터패스·제어·메모리 RTL 7개 모듈을 설계하고 FPGA로 구현했습니다.
 
-**FPGA 기반 SRCNN 이미지 업스케일링 가속기 설계**
+- 전체 MAC 연산의 80%가 집중된 Layer 2를 64개의 3×3 convolution PE에 병렬 매핑
+- Sliding-window line buffer로 선택 논리를 단순화해 초기 대비 전체 설계 LUT 약 15% 감소
+- Feature-map lifetime에 따른 buffer reuse로 중간 저장 요구량 5.76 Mbit에서 2.88 Mbit로 축소
+- 제공된 모든 테스트 케이스에서 C++ golden reference와 비트 단위 일치 확인 및 100 MHz FPGA 시연 완료
 
-핵심 성과: **Q8.8 fixed-point 기반 3-layer SRCNN 연산을 FPGA용 RTL architecture로 구현**
+### 3. [AXI4-Lite Slave](https://github.com/bjunverse26/AXI4_Lite) / [AXI4-UART](https://github.com/bjunverse26/AXI4_UART)
 
-- Recursive 및 Streamline 구조를 포함한 3가지 SRCNN accelerator architecture 설계
-- Line Buffer, PE Array, Controller FSM, Packed Activation Memory 구성
-- C++ reference와 RTL 결과의 bit-level 비교 검증
-- 100 MHz timing 기준의 FPGA 구현 가능성 확인
+AXI4-Lite protocol과 memory-mapped peripheral을 RTL로 구현하고 directed testbench와 SVA로 검증했습니다.
 
-[Digital_System_Design](https://github.com/bjunverse26/Digital_System_Design)
+- AW/W channel의 도착 순서와 read/write backpressure를 처리하는 32-bit AXI4-Lite slave 설계
+- Register map, byte strobe, response channel과 invalid-address 동작 검증
+- AXI register access로 제어하는 UART TX/RX, FIFO, 16× oversampling loopback 구현
+- 기능 testbench와 protocol assertion을 분리한 self-checking 검증 환경 구성
 
-### 3. AXI4-Lite / AXI4-UART
+### 4. [Asynchronous FIFO and CDC](https://github.com/bjunverse26/Async_FIFO)
 
-**Memory-mapped peripheral RTL 설계 및 검증**
+서로 다른 clock domain 사이에서 데이터 순서와 무결성을 유지하는 CDC 구조를 설계했습니다.
 
-핵심 성과: **AXI4-Lite slave와 UART peripheral을 직접 설계하고 protocol edge case 검증**
+- Gray-code pointer와 2-FF synchronizer 기반 dual-clock FIFO 구현
+- Full/empty flag와 request/acknowledge handshake CDC 설계
+- 비동기 write/read clock에서 queue scoreboard로 누락·중복·순서 오류 자동 검사
 
-- 32-bit AXI4-Lite slave interface 및 UART peripheral RTL 설계
-- AW/W channel 도착 순서, read/write backpressure, invalid address response 처리
-- Directed testbench와 SVA를 분리한 protocol 검증 환경 구성
-- Register map 기반 memory-mapped peripheral 동작 확인
+### 5. [1 kHz Mechatronics Motor Control](https://github.com/bjunverse26/Mechatronics)
 
-[AXI4_Lite](https://github.com/bjunverse26/AXI4_Lite) / [AXI4_UART](https://github.com/bjunverse26/AXI4_UART)
+TI C6701 DSP에서 센서 입력, 상태 판단, 제어 연산과 PWM 출력을 1 kHz timer ISR로 연결했습니다.
 
-### 4. Async FIFO & CDC
+- DC motor PID·trajectory tracking, STEP motor velocity profile, BLDC 6-step commutation 구현
+- Inverted pendulum의 PUMP·COAST·Balancing 상태 전이와 각도 PD·cart 위치 P 제어 통합
+- 반복 실물 시험에서 약 1~2초 직립을 확인하고, 이후 cart drift를 자세 안정화와 중심 복귀가 결합된 문제로 분석
 
-**Clock Domain Crossing 설계 및 self-checking 검증**
+### 6. [Llama 2 7B Analog PIM Evaluation Framework](https://github.com/bjunverse26/PIM_Framework)
 
-핵심 성과: **dual-clock 환경에서 데이터 무결성을 보장하는 CDC 구조 설계 및 검증**
+연구실 공동 개발에서 Llama 추론에 Analog PIM의 기능 모델을 연결하고, 하드웨어 조건에 따른 모델 품질을 PPL로 평가했습니다.
 
-- Gray-code pointer와 2-FF synchronizer 기반 dual-clock FIFO 설계
-- Full/empty flag 및 request/acknowledge handshake CDC 구조 구현
-- Queue scoreboard 기반 데이터 순서 및 무결성 검증
-- 비동기 클럭 조건에서 overflow/underflow 방지 시나리오 확인
+- SmoothQuant W8A8 Linear projection과 KV-cache 연동 Attention의 PIM 연산 경로 분리
+- `QKᵀ`와 `P·V`에 SubArray 부분합, conductance, retention, noise와 ADC 모델 연결
+- WikiText-2 PPL 평가 흐름과 반복 실험을 위한 Python 기반 시뮬레이션 구성
 
-[Async_FIFO](https://github.com/bjunverse26/Async_FIFO)
-
-### 5. Mechatronics Motor Control
-
-**DSP 기반 실시간 모터 제어 펌웨어**
-
-핵심 성과: **TI C6701 DSP 기반 register-level 제어와 실시간 feedback loop 구현**
-
-- Timer interrupt 기반 1 kHz 실시간 제어 루프 구성
-- Encoder, Hall sensor, PWM 출력을 이용한 DC/STEP/BLDC motor 제어
-- Inverted pendulum의 swing-up 및 balancing 제어 구조 구현
-- MATLAB/Simulink 모델과 Embedded C 기반 DSP 제어 실습 연계
-
-[Mechatronics](https://github.com/bjunverse26/Mechatronics)
-
-### 6. PIM Framework
-
-**PIM hardware effect 및 quantization simulation**
-
-핵심 성과: **LLM inference 경로에서 hardware non-ideality가 결과 품질에 미치는 영향 분석**
-
-- Llama 추론 경로의 quantization 및 PIM hardware effect 모델링
-- Retention, noise, ADC error 등 hardware constraint 반영
-- PPL 기반 inference 품질 변화 분석
-
-[PIM_Framework](https://github.com/bjunverse26/PIM_Framework)
-
-## 🛠 기술 스택
+## Tools
 
 | 구분 | 기술 |
 | --- | --- |
-| HDL / Verification | Verilog, SystemVerilog, SVA |
-| FPGA / EDA | Vivado |
-| Circuit / Layout | Cadence Virtuoso, KiCad |
-| Embedded / Software | C, C++, Python |
-| Modeling / Analysis | MATLAB, Simulink |
-| Development Tools | Git, GitHub |
+| HDL & Verification | Verilog, SystemVerilog, SVA |
+| FPGA & EDA | Vivado |
+| Circuit & Layout | Cadence Virtuoso, KiCad |
+| Embedded & Software | C, C++, Python |
+| Board & Interface | Arty S7-25T, UART |
+| Modeling | PyTorch, MATLAB, Simulink |
+| Development | Linux, Git, GitHub |
 
-## 🚀 지향점
+## Direction
 
-하드웨어 구조를 이해하고 RTL로 구현하는 능력, 검증 환경으로 설계 신뢰도를 높이는 능력, 실제 보드와 칩에서 동작을 확인하는 능력의 균형 있는 성장.
-
-장기적으로는 디지털 시스템과 임베디드 하드웨어가 맞물리는 영역에서 실무 역량 축적.
+셀과 RTL 설계를 chip 제작, FPGA 구현, board-level 측정 환경으로 연결하고, 반복 검증은 코드로 자동화하는 역량을 쌓고 있습니다.
